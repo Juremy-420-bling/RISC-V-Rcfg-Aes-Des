@@ -1,0 +1,1126 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 16 15:26:44 2020
+# Process ID: 20180
+# Current directory: F:/WHF/eth_udp_loop/eth_udp_loop.runs/synth_2
+# Command line: vivado.exe -log eth_udp_loop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source eth_udp_loop.tcl
+# Log file: F:/WHF/eth_udp_loop/eth_udp_loop.runs/synth_2/eth_udp_loop.vds
+# Journal file: F:/WHF/eth_udp_loop/eth_udp_loop.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source eth_udp_loop.tcl -notrace
+Command: synth_design -top eth_udp_loop -part xc7a35tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8664 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 492.688 ; gain = 96.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'eth_udp_loop' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [F:/WHF/eth_udp_loop/eth_udp_loop.runs/synth_2/.Xil/Vivado-20180-JTLX5NCHKDQ8AX0/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (1#1) [F:/WHF/eth_udp_loop/eth_udp_loop.runs/synth_2/.Xil/Vivado-20180-JTLX5NCHKDQ8AX0/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'gmii_to_rgmii' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/gmii_to_rgmii.v:23]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_rx.v:23]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [E:/vivado2018/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22477]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: FALSE - type: string 
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: float 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (2#1) [E:/vivado2018/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22477]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/vivado2018/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22342]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (3#1) [E:/vivado2018/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22342]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/vivado2018/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [E:/vivado2018/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/vivado2018/Vivado/2018.3/scripts/rt/data/unisim_comp.v:838]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (5#1) [E:/vivado2018/Vivado/2018.3/scripts/rt/data/unisim_comp.v:838]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_rx.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/vivado2018/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22464]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (6#1) [E:/vivado2018/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22464]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (7#1) [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_tx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/vivado2018/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31641]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (8#1) [E:/vivado2018/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31641]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (9#1) [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_tx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gmii_to_rgmii' (10#1) [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/gmii_to_rgmii.v:23]
+INFO: [Synth 8-6157] synthesizing module 'arp' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_rx.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter st_idle bound to: 5'b00001 
+	Parameter st_preamble bound to: 5'b00010 
+	Parameter st_eth_head bound to: 5'b00100 
+	Parameter st_arp_data bound to: 5'b01000 
+	Parameter st_rx_end bound to: 5'b10000 
+	Parameter ETH_TPYE bound to: 16'b0000100000000110 
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (11#1) [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+	Parameter st_idle bound to: 5'b00001 
+	Parameter st_preamble bound to: 5'b00010 
+	Parameter st_eth_head bound to: 5'b00100 
+	Parameter st_arp_data bound to: 5'b01000 
+	Parameter st_crc bound to: 5'b10000 
+	Parameter ETH_TYPE bound to: 16'b0000100000000110 
+	Parameter HD_TYPE bound to: 16'b0000000000000001 
+	Parameter PROTOCOL_TYPE bound to: 16'b0000100000000000 
+	Parameter MIN_DATA_NUM bound to: 16'b0000000000101110 
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (12#1) [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/crc32_d8.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (13#1) [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/crc32_d8.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (14#1) [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'udp' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'udp_rx' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter st_idle bound to: 7'b0000001 
+	Parameter st_preamble bound to: 7'b0000010 
+	Parameter st_eth_head bound to: 7'b0000100 
+	Parameter st_ip_head bound to: 7'b0001000 
+	Parameter st_udp_head bound to: 7'b0010000 
+	Parameter st_rx_data bound to: 7'b0100000 
+	Parameter st_rx_end bound to: 7'b1000000 
+	Parameter ETH_TYPE bound to: 16'b0000100000000000 
+INFO: [Synth 8-6155] done synthesizing module 'udp_rx' (15#1) [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'udp_tx' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+	Parameter st_idle bound to: 7'b0000001 
+	Parameter st_check_sum bound to: 7'b0000010 
+	Parameter st_preamble bound to: 7'b0000100 
+	Parameter st_eth_head bound to: 7'b0001000 
+	Parameter st_ip_head bound to: 7'b0010000 
+	Parameter st_tx_data bound to: 7'b0100000 
+	Parameter st_crc bound to: 7'b1000000 
+	Parameter ETH_TYPE bound to: 16'b0000100000000000 
+	Parameter MIN_DATA_NUM bound to: 16'b0000000000010010 
+WARNING: [Synth 8-5788] Register ip_head_reg[6] in module udp_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:200]
+WARNING: [Synth 8-5788] Register ip_head_reg[5] in module udp_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:200]
+WARNING: [Synth 8-5788] Register ip_head_reg[4] in module udp_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:200]
+WARNING: [Synth 8-5788] Register ip_head_reg[3] in module udp_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:200]
+WARNING: [Synth 8-5788] Register ip_head_reg[2] in module udp_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:200]
+WARNING: [Synth 8-5788] Register ip_head_reg[0] in module udp_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'udp_tx' (16#1) [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'udp' (17#1) [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sync_fifo_2048x32b' [F:/WHF/eth_udp_loop/eth_udp_loop.runs/synth_2/.Xil/Vivado-20180-JTLX5NCHKDQ8AX0/realtime/sync_fifo_2048x32b_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sync_fifo_2048x32b' (18#1) [F:/WHF/eth_udp_loop/eth_udp_loop.runs/synth_2/.Xil/Vivado-20180-JTLX5NCHKDQ8AX0/realtime/sync_fifo_2048x32b_stub.v:6]
+WARNING: [Synth 8-350] instance 'u_sync_fifo_2048x32b' of module 'sync_fifo_2048x32b' requires 10 connections, but only 8 given [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:184]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:195]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [F:/WHF/eth_udp_loop/eth_udp_loop.runs/synth_2/.Xil/Vivado-20180-JTLX5NCHKDQ8AX0/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (19#1) [F:/WHF/eth_udp_loop/eth_udp_loop.runs/synth_2/.Xil/Vivado-20180-JTLX5NCHKDQ8AX0/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'eth_ctrl' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'eth_ctrl' (20#1) [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_ctrl.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_udp'. This will prevent further optimization [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:160]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:195]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_sync_fifo_2048x32b'. This will prevent further optimization [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:184]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_gmii_to_rgmii'. This will prevent further optimization [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:105]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_eth_ctrl'. This will prevent further optimization [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:211]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_arp'. This will prevent further optimization [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'eth_udp_loop' (21#1) [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:23]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[31]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[30]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[29]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[28]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[27]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[26]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[25]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[24]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[31]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[30]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[29]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[28]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[27]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[26]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[25]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 557.020 ; gain = 160.500
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 557.020 ; gain = 160.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 557.020 ; gain = 160.500
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'u_clk_wiz'
+Finished Parsing XDC File [f:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'u_clk_wiz'
+Parsing XDC File [f:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b/sync_fifo_2048x32b_in_context.xdc] for cell 'u_sync_fifo_2048x32b'
+Finished Parsing XDC File [f:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b/sync_fifo_2048x32b_in_context.xdc] for cell 'u_sync_fifo_2048x32b'
+Parsing XDC File [f:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [f:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Parsing XDC File [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:1]
+Finished Parsing XDC File [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/eth_udp_loop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/eth_udp_loop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 901.816 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 901.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 901.816 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 901.816 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_sync_fifo_2048x32b' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'your_instance_name' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 901.816 ; gain = 505.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 901.816 ; gain = 505.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  f:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  f:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for u_clk_wiz. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_sync_fifo_2048x32b. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for your_instance_name. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 901.816 ; gain = 505.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'arp_rx'
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "error_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "arp_rx_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'crc_clr_reg' into 'tx_done_reg' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:315]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[23][7:0]' into 'eth_head_reg[5][7:0]' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:181]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[22][7:0]' into 'eth_head_reg[4][7:0]' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:181]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[21][7:0]' into 'eth_head_reg[3][7:0]' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:181]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[20][7:0]' into 'eth_head_reg[2][7:0]' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:181]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[19][7:0]' into 'eth_head_reg[1][7:0]' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:181]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[18][7:0]' into 'eth_head_reg[0][7:0]' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:181]
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'arp_tx'
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_done_t" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'udp_rx'
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "error_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "des_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_head_byte_num" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "udp_byte_num" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rec_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'crc_clr_reg' into 'tx_done_reg' [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:404]
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'udp_tx'
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tx_done_t" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tx_bit_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gmii_tx_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                            00001 |                            00001
+             st_preamble |                            00010 |                            00010
+             st_eth_head |                            00100 |                            00100
+             st_arp_data |                            01000 |                            01000
+               st_rx_end |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'arp_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                            00001 |                            00001
+             st_preamble |                            00010 |                            00010
+             st_eth_head |                            00100 |                            00100
+             st_arp_data |                            01000 |                            01000
+                  st_crc |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'arp_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                          0000001 |                          0000001
+             st_preamble |                          0000010 |                          0000010
+             st_eth_head |                          0000100 |                          0000100
+              st_ip_head |                          0001000 |                          0001000
+             st_udp_head |                          0010000 |                          0010000
+              st_rx_data |                          0100000 |                          0100000
+               st_rx_end |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'udp_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                          0000001 |                          0000001
+            st_check_sum |                          0000010 |                          0000010
+             st_preamble |                          0000100 |                          0000100
+             st_eth_head |                          0001000 |                          0001000
+              st_ip_head |                          0010000 |                          0010000
+              st_tx_data |                          0100000 |                          0100000
+                  st_crc |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'udp_tx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 901.816 ; gain = 505.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  10 Input     20 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 8     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 16    
+	   3 Input      1 Bit         XORs := 12    
+	   6 Input      1 Bit         XORs := 14    
+	   8 Input      1 Bit         XORs := 2     
+	   5 Input      1 Bit         XORs := 8     
+	   7 Input      1 Bit         XORs := 14    
+	  10 Input      1 Bit         XORs := 4     
+	   9 Input      1 Bit         XORs := 6     
+	  12 Input      1 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 2     
++---Registers : 
+	               48 Bit    Registers := 4     
+	               32 Bit    Registers := 15    
+	               16 Bit    Registers := 9     
+	                8 Bit    Registers := 68    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   6 Input     48 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 8     
+	   4 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 4     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 12    
+	   3 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 8     
+	   4 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 14    
+	   8 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 8     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 40    
+	   4 Input      5 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 3     
+	   6 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 13    
+	   8 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 62    
+	   4 Input      1 Bit        Muxes := 14    
+	   8 Input      1 Bit        Muxes := 22    
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module arp_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 3     
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   6 Input     48 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   6 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 5     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 18    
+	   4 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 3     
+	   6 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 23    
+	   4 Input      1 Bit        Muxes := 3     
+Module arp_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 45    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   6 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 2     
+Module crc32_d8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module udp_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	   8 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      7 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 10    
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 10    
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 17    
+	   8 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module udp_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	  10 Input     20 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 23    
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   8 Input     32 Bit        Muxes := 3     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 7     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 5     
+	   8 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 10    
+	   8 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+Module eth_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "eth_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "arp_rx_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_done_t" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tx_done_t" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tx_bit_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gmii_tx_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_udp_rx/eth_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_udp_rx/skip_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_udp_rx/udp_byte_num" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "u_udp_rx/rec_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[31]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[30]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[29]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[28]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[27]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[26]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[25]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port crc_data[24]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[31]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[30]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[29]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[28]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[27]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[26]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[25]
+WARNING: [Synth 8-3331] design arp_tx has unconnected port crc_data[24]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[7][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[5][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[13][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[12][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/eth_head_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[10][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/eth_head_reg[9][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[8][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/eth_head_reg[7][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[15][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[14][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/arp_data_reg[13][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[12][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/arp_data_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[10][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/arp_data_reg[9][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[8][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/arp_data_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[17][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/arp_data_reg[16][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/preamble_reg[7][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/preamble_reg[6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/preamble_reg[5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/preamble_reg[4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/preamble_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/preamble_reg[2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/preamble_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/preamble_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/eth_head_reg[13][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[12][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[11][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[10][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/eth_head_reg[9][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/eth_head_reg[8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[7][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[15][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[14][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[13][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[12][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/arp_data_reg[11][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/arp_data_reg[10][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[9][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[5][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/arp_data_reg[4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/arp_data_reg[17][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[16][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[7][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[6][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[5][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[4][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[3][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[2][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/preamble_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/eth_head_reg[13][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[12][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/eth_head_reg[11][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/eth_head_reg[10][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[9][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[8][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[7][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/eth_head_reg[6][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[15][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[14][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/arp_data_reg[13][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/arp_data_reg[12][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[11][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[10][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[9][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[8][2] )
+INFO: [Synth 8-3886] merging instance 'u_arp/u_arp_tx/arp_data_reg[7][2]' (FDCE) to 'u_arp/u_arp_tx/arp_data_reg[7][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[6][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/arp_data_reg[5][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_arp/\u_arp_tx/arp_data_reg[4][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[3][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[2][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[17][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/arp_data_reg[16][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_arp/\u_arp_tx/preamble_reg[7][3] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'u_arp/u_arp_tx/arp_data_reg[7][3]' (FDCE) to 'u_arp/u_arp_tx/arp_data_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'u_arp/u_arp_tx/arp_data_reg[7][4]' (FDCE) to 'u_arp/u_arp_tx/arp_data_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'u_arp/u_arp_tx/arp_data_reg[7][5]' (FDCE) to 'u_arp/u_arp_tx/arp_data_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'u_arp/u_arp_tx/arp_data_reg[7][6]' (FDCE) to 'u_arp/u_arp_tx/arp_data_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/check_buffer_reg[24]' (FDCE) to 'u_udp/u_udp_tx/check_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/check_buffer_reg[25]' (FDCE) to 'u_udp/u_udp_tx/check_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/check_buffer_reg[26]' (FDCE) to 'u_udp/u_udp_tx/check_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/check_buffer_reg[27]' (FDCE) to 'u_udp/u_udp_tx/check_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/check_buffer_reg[28]' (FDCE) to 'u_udp/u_udp_tx/check_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/check_buffer_reg[29]' (FDCE) to 'u_udp/u_udp_tx/check_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/check_buffer_reg[30]' (FDCE) to 'u_udp/u_udp_tx/check_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/check_buffer_reg[31]' (FDCE) to 'u_udp/u_udp_tx/check_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/check_buffer_reg[20]' (FDCE) to 'u_udp/u_udp_tx/check_buffer_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/check_buffer_reg[21]' (FDCE) to 'u_udp/u_udp_tx/check_buffer_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/check_buffer_reg[22]' (FDCE) to 'u_udp/u_udp_tx/check_buffer_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_rx/ip_head_byte_num_reg[0]' (FDCE) to 'u_udp/u_udp_rx/ip_head_byte_num_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/udp_num_reg[0]' (FDCE) to 'u_udp/u_udp_tx/total_num_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/total_num_reg[0]' (FDCE) to 'u_udp/u_udp_tx/tx_data_num_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/udp_num_reg[1]' (FDCE) to 'u_udp/u_udp_tx/tx_data_num_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][24]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[2][24]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[2][25]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[0][24]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][24]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][16]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[2][16]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[2][20]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[0][16]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[6][16]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][16]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][8]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[1][8]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[6][8]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][8]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][0]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[1][0]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[1][9]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[6][0]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][0]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][25]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[2][25]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[2][17]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[0][25]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][25]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][17]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[2][17]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[2][26]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[0][17]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][17]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][9]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[1][9]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[6][9]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][9]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][1]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[1][1]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[1][10]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[6][1]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][1]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][26]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[2][26]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[2][18]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[0][26]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][26]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][18]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[2][18]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[2][27]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[0][18]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][18]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][10]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[1][10]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[6][10]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][10]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][2]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[1][2]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[1][11]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[6][2]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][2]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][27]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[2][27]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[0][27]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][27]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][19]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[2][19]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[2][28]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[0][19]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][19]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][11]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[1][11]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[6][11]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][11]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][3]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][21]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[1][3]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[1][12]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[6][3]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][3]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][28]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[2][28]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[2][29]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[0][28]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][28]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][20]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[2][20]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[0][20]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][20]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][21]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][12]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[1][12]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[6][12]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[5][12]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[3][4]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[1][4]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'u_udp/u_udp_tx/ip_head_reg[6][4]' (FDE) to 'u_udp/u_udp_tx/ip_head_reg[3][5]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 901.816 ; gain = 505.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_wiz/clk_out1' to pin 'u_clk_wiz/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 901.816 ; gain = 505.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 983.242 ; gain = 586.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 984.258 ; gain = 587.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:165]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:162]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:164]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:158]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:152]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:157]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:157]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:157]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:157]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:155]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:155]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:155]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:155]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:155]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:155]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:155]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:155]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:87]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:87]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:87]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:87]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:87]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:87]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:87]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:153]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:153]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:153]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:153]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:153]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/WHF/eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:154]
+INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 984.258 ; gain = 587.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 984.258 ; gain = 587.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 984.258 ; gain = 587.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 984.258 ; gain = 587.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 984.258 ; gain = 587.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 984.258 ; gain = 587.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |clk_wiz            |         1|
+|2     |sync_fifo_2048x32b |         1|
+|3     |ila_0              |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |clk_wiz            |     1|
+|2     |ila_0              |     1|
+|3     |sync_fifo_2048x32b |     1|
+|4     |BUFG               |     1|
+|5     |BUFIO              |     1|
+|6     |CARRY4             |    77|
+|7     |IDDR               |     5|
+|8     |IDELAYCTRL         |     1|
+|9     |IDELAYE2           |     5|
+|10    |LUT1               |    94|
+|11    |LUT2               |   137|
+|12    |LUT3               |    89|
+|13    |LUT4               |   222|
+|14    |LUT5               |   239|
+|15    |LUT6               |   429|
+|16    |MUXF7              |     4|
+|17    |ODDR               |     5|
+|18    |FDCE               |   659|
+|19    |FDPE               |   176|
+|20    |FDRE               |    69|
+|21    |FDSE               |    10|
+|22    |IBUF               |     7|
+|23    |OBUF               |     7|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+------------------+--------------+------+
+|      |Instance          |Module        |Cells |
++------+------------------+--------------+------+
+|1     |top               |              |  2275|
+|2     |  u_gmii_to_rgmii |gmii_to_rgmii |    19|
+|3     |    u_rgmii_rx    |rgmii_rx      |    14|
+|4     |    u_rgmii_tx    |rgmii_tx      |     5|
+|5     |  u_arp           |arp           |   920|
+|6     |    u_arp_rx      |arp_rx        |   547|
+|7     |    u_arp_tx      |arp_tx        |   305|
+|8     |    u_crc32_d8    |crc32_d8_0    |    68|
+|9     |  u_udp           |udp           |  1269|
+|10    |    u_crc32_d8    |crc32_d8      |    57|
+|11    |    u_udp_rx      |udp_rx        |   396|
+|12    |    u_udp_tx      |udp_tx        |   816|
+|13    |  u_eth_ctrl      |eth_ctrl      |    13|
++------+------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 984.258 ; gain = 587.738
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 494 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 984.258 ; gain = 242.941
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 984.258 ; gain = 587.738
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 984.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+352 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 984.258 ; gain = 589.469
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 984.258 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/WHF/eth_udp_loop/eth_udp_loop.runs/synth_2/eth_udp_loop.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file eth_udp_loop_utilization_synth.rpt -pb eth_udp_loop_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 16 15:27:34 2020...

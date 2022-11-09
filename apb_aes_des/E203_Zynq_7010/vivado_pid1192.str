@@ -1,0 +1,125 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 1192
+License: Customer
+
+Current time: 	Thu Nov 10 01:35:05 CST 2022
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 394 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	E:/software/VIVADO/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	E:/software/VIVADO/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	001
+User home directory: C:/Users/001
+User working directory: E:/BaiduNetdiskDownload/E203_P2/E203_Zynq_7010
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/software/VIVADO/Vivado
+HDI_APPROOT: E:/software/VIVADO/Vivado/2019.2
+RDI_DATADIR: E:/software/VIVADO/Vivado/2019.2/data
+RDI_BINDIR: E:/software/VIVADO/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/001/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/001/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/001/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	E:/software/VIVADO/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	E:/BaiduNetdiskDownload/E203_P2/E203_Zynq_7010/vivado.log
+Vivado journal file location: 	E:/BaiduNetdiskDownload/E203_P2/E203_Zynq_7010/vivado.jou
+Engine tmp dir: 	E:/BaiduNetdiskDownload/E203_P2/E203_Zynq_7010/.Xil/Vivado-1192-DESKTOP-D1FV9G7
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/software/VIVADO/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: E:/software/VIVADO/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: E:/software/VIVADO/Vivado/2019.2
+XILINX_SDK: E:/software/VIVADO/Vitis/2019.2
+XILINX_VITIS: E:/software/VIVADO/Vitis/2019.2
+XILINX_VIVADO: E:/software/VIVADO/Vivado/2019.2
+XILINX_VIVADO_HLS: E:/software/VIVADO/Vivado/2019.2
+
+
+GUI allocated memory:	186 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 903 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 86 MB (+87341kb) [00:00:03]
+// [Engine Memory]: 687 MB (+568670kb) [00:00:03]
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: E:\BaiduNetdiskDownload\E203_P2\E203_Zynq_7010\E203_Zynq_7010.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/BaiduNetdiskDownload/E203_P2/E203_Zynq_7010/E203_Zynq_7010.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 861 MB (+146435kb) [00:00:06]
+// [GUI Memory]: 109 MB (+19590kb) [00:00:07]
+// [GUI Memory]: 114 MB (+205kb) [00:00:07]
+// WARNING: HEventQueue.dispatchEvent() is taking  1656 ms.
+// Tcl Message: open_project E:/BaiduNetdiskDownload/E203_P2/E203_Zynq_7010/E203_Zynq_7010.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software/VIVADO/Vivado/2019.2/data/ip'. 
+// [GUI Memory]: 123 MB (+3478kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 952 MB. GUI used memory: 59 MB. Current time: 11/10/22, 1:35:06 AM CST
+// Project name: E203_Zynq_7010; location: E:/BaiduNetdiskDownload/E203_P2/E203_Zynq_7010; part: xc7a35tfgg484-2
+// [Engine Memory]: 952 MB (+50312kb) [00:00:08]
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aic_rv32 (aic_rv32.v)]", 3); // B (F, cr)
+// [GUI Memory]: 130 MB (+934kb) [00:07:40]
+// Elapsed time: 556 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aic_rv32 (aic_rv32.v), dut : e203_soc_top (e203_soc_top.v)]", 6); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aic_rv32 (aic_rv32.v), dut : e203_soc_top (e203_soc_top.v), u_e203_subsys_top : e203_subsys_top (e203_subsys_top.v)]", 7); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aic_rv32 (aic_rv32.v), dut : e203_soc_top (e203_soc_top.v), u_e203_subsys_top : e203_subsys_top (e203_subsys_top.v), u_e203_subsys_main : e203_subsys_main (e203_subsys_main.v)]", 8); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aic_rv32 (aic_rv32.v), dut : e203_soc_top (e203_soc_top.v), u_e203_subsys_top : e203_subsys_top (e203_subsys_top.v), u_e203_subsys_main : e203_subsys_main (e203_subsys_main.v), u_e203_subsys_perips : e203_subsys_perips (e203_subsys_perips.v)]", 14); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aic_rv32 (aic_rv32.v), dut : e203_soc_top (e203_soc_top.v), u_e203_subsys_top : e203_subsys_top (e203_subsys_top.v), u_e203_subsys_main : e203_subsys_main (e203_subsys_main.v), u_e203_subsys_perips : e203_subsys_perips (e203_subsys_perips.v), u_apb_Des_Aes : apb_Des_Aes (apb_Des_Aes.v)]", 22); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aic_rv32 (aic_rv32.v), dut : e203_soc_top (e203_soc_top.v), u_e203_subsys_top : e203_subsys_top (e203_subsys_top.v), u_e203_subsys_main : e203_subsys_main (e203_subsys_main.v), u_e203_subsys_perips : e203_subsys_perips (e203_subsys_perips.v), u_apb_Des_Aes : apb_Des_Aes (apb_Des_Aes.v), u_DES_AES : top (top.v)]", 23); // B (F, cr)

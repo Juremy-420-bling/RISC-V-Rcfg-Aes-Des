@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov  3 21:53:12 2022
+# Process ID: 30756
+# Current directory: C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/sync_fifo_2048x32b_synth_1
+# Command line: vivado.exe -log sync_fifo_2048x32b.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sync_fifo_2048x32b.tcl
+# Log file: C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/sync_fifo_2048x32b_synth_1/sync_fifo_2048x32b.vds
+# Journal file: C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/sync_fifo_2048x32b_synth_1\vivado.jou
+#-----------------------------------------------------------
+source sync_fifo_2048x32b.tcl -notrace

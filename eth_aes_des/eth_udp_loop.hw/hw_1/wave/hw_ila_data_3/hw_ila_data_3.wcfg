@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="5">
+	</WVObjectSize>
+	<wvobject fp_name="rec_data" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">rec_data[31:0]</obj_property>
+		<obj_property name="ObjectShortName">rec_data[31:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="start" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">start</obj_property>
+		<obj_property name="ObjectShortName">start</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="outdata" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">outdata[127:0]</obj_property>
+		<obj_property name="ObjectShortName">outdata[127:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="rec_pkt_done" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">rec_pkt_done</obj_property>
+		<obj_property name="ObjectShortName">rec_pkt_done</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="cntt" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">cntt[3:0]</obj_property>
+		<obj_property name="ObjectShortName">cntt[3:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+

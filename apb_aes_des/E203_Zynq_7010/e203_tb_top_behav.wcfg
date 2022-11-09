@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="e203_tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="e203_tb_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="174964292fs"></ZoomStartTime>
+      <ZoomEndTime time="175013543fs"></ZoomEndTime>
+      <Cursor1Time time="174986000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="166"></NameColumnWidth>
+      <ValueColumnWidth column_width="233"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="72" />
+   <wvobject fp_name="/e203_tb_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/lfextclk" type="logic">
+      <obj_property name="ElementShortName">lfextclk</obj_property>
+      <obj_property name="ObjectShortName">lfextclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/hfclk" type="logic">
+      <obj_property name="ElementShortName">hfclk</obj_property>
+      <obj_property name="ObjectShortName">hfclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/x3" type="array">
+      <obj_property name="ElementShortName">x3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/pc_vld" type="array">
+      <obj_property name="ElementShortName">pc_vld[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_vld[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/pc_write_to_host_cnt" type="array">
+      <obj_property name="ElementShortName">pc_write_to_host_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_write_to_host_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/pc_write_to_host_cycle" type="array">
+      <obj_property name="ElementShortName">pc_write_to_host_cycle[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_write_to_host_cycle[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/valid_ir_cycle" type="array">
+      <obj_property name="ElementShortName">valid_ir_cycle[31:0]</obj_property>
+      <obj_property name="ObjectShortName">valid_ir_cycle[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/cycle_count" type="array">
+      <obj_property name="ElementShortName">cycle_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cycle_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/pc_write_to_host_flag" type="logic">
+      <obj_property name="ElementShortName">pc_write_to_host_flag</obj_property>
+      <obj_property name="ObjectShortName">pc_write_to_host_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/i_valid" type="logic">
+      <obj_property name="ElementShortName">i_valid</obj_property>
+      <obj_property name="ObjectShortName">i_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/i_ready" type="logic">
+      <obj_property name="ElementShortName">i_ready</obj_property>
+      <obj_property name="ObjectShortName">i_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/stop_assert_irq" type="logic">
+      <obj_property name="ElementShortName">stop_assert_irq</obj_property>
+      <obj_property name="ObjectShortName">stop_assert_irq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/tb_itcm_bus_err" type="logic">
+      <obj_property name="ElementShortName">tb_itcm_bus_err</obj_property>
+      <obj_property name="ObjectShortName">tb_itcm_bus_err</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/tb_ext_irq" type="logic">
+      <obj_property name="ElementShortName">tb_ext_irq</obj_property>
+      <obj_property name="ObjectShortName">tb_ext_irq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/tb_tmr_irq" type="logic">
+      <obj_property name="ElementShortName">tb_tmr_irq</obj_property>
+      <obj_property name="ObjectShortName">tb_tmr_irq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/tb_sft_irq" type="logic">
+      <obj_property name="ElementShortName">tb_sft_irq</obj_property>
+      <obj_property name="ObjectShortName">tb_sft_irq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/testcase" type="array">
+      <obj_property name="ElementShortName">testcase[2400:1]</obj_property>
+      <obj_property name="ObjectShortName">testcase[2400:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/dumpwave" type="array">
+      <obj_property name="ElementShortName">dumpwave[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dumpwave[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/jtag_TDI" type="logic">
+      <obj_property name="ElementShortName">jtag_TDI</obj_property>
+      <obj_property name="ObjectShortName">jtag_TDI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/jtag_TDO" type="logic">
+      <obj_property name="ElementShortName">jtag_TDO</obj_property>
+      <obj_property name="ObjectShortName">jtag_TDO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/jtag_TCK" type="logic">
+      <obj_property name="ElementShortName">jtag_TCK</obj_property>
+      <obj_property name="ObjectShortName">jtag_TCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/jtag_TMS" type="logic">
+      <obj_property name="ElementShortName">jtag_TMS</obj_property>
+      <obj_property name="ObjectShortName">jtag_TMS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/jtag_TRST" type="logic">
+      <obj_property name="ElementShortName">jtag_TRST</obj_property>
+      <obj_property name="ObjectShortName">jtag_TRST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/jtag_DRV_TDO" type="logic">
+      <obj_property name="ElementShortName">jtag_DRV_TDO</obj_property>
+      <obj_property name="ObjectShortName">jtag_DRV_TDO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/HCLK" type="logic">
+      <obj_property name="ElementShortName">HCLK</obj_property>
+      <obj_property name="ObjectShortName">HCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/PENABLE" type="logic">
+      <obj_property name="ElementShortName">PENABLE</obj_property>
+      <obj_property name="ObjectShortName">PENABLE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/PADDR" type="array">
+      <obj_property name="ElementShortName">PADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/PWDATA" type="array">
+      <obj_property name="ElementShortName">PWDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PWDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/PWRITE" type="logic">
+      <obj_property name="ElementShortName">PWRITE</obj_property>
+      <obj_property name="ObjectShortName">PWRITE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/PSEL" type="logic">
+      <obj_property name="ElementShortName">PSEL</obj_property>
+      <obj_property name="ObjectShortName">PSEL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/r_text" type="array">
+      <obj_property name="ElementShortName">r_text[127:0]</obj_property>
+      <obj_property name="ObjectShortName">r_text[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/r_result" type="array">
+      <obj_property name="ElementShortName">r_result[127:0]</obj_property>
+      <obj_property name="ObjectShortName">r_result[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/PENABLE" type="logic">
+      <obj_property name="ElementShortName">PENABLE</obj_property>
+      <obj_property name="ObjectShortName">PENABLE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/PRDATA" type="array">
+      <obj_property name="ElementShortName">PRDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PRDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/PREADY" type="logic">
+      <obj_property name="ElementShortName">PREADY</obj_property>
+      <obj_property name="ObjectShortName">PREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/PSLVERR" type="logic">
+      <obj_property name="ElementShortName">PSLVERR</obj_property>
+      <obj_property name="ObjectShortName">PSLVERR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/interrupt" type="logic">
+      <obj_property name="ElementShortName">interrupt</obj_property>
+      <obj_property name="ObjectShortName">interrupt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/r_text" type="array">
+      <obj_property name="ElementShortName">r_text[127:0]</obj_property>
+      <obj_property name="ObjectShortName">r_text[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/r_key" type="array">
+      <obj_property name="ElementShortName">r_key[127:0]</obj_property>
+      <obj_property name="ObjectShortName">r_key[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/r_enable" type="array">
+      <obj_property name="ElementShortName">r_enable[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_enable[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/r_mode" type="array">
+      <obj_property name="ElementShortName">r_mode[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_mode[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/r_result" type="array">
+      <obj_property name="ElementShortName">r_result[127:0]</obj_property>
+      <obj_property name="ObjectShortName">r_result[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/s_out2result" type="array">
+      <obj_property name="ElementShortName">s_out2result[127:0]</obj_property>
+      <obj_property name="ObjectShortName">s_out2result[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/out0" type="array">
+      <obj_property name="ElementShortName">out0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">out0[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/newkey0" type="array">
+      <obj_property name="ElementShortName">newkey0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">newkey0[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/out1" type="array">
+      <obj_property name="ElementShortName">out1[127:0]</obj_property>
+      <obj_property name="ObjectShortName">out1[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/newkey1" type="array">
+      <obj_property name="ElementShortName">newkey1[127:0]</obj_property>
+      <obj_property name="ObjectShortName">newkey1[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/out2" type="array">
+      <obj_property name="ElementShortName">out2[127:0]</obj_property>
+      <obj_property name="ObjectShortName">out2[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/newkey2" type="array">
+      <obj_property name="ElementShortName">newkey2[127:0]</obj_property>
+      <obj_property name="ObjectShortName">newkey2[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/out3" type="array">
+      <obj_property name="ElementShortName">out3[127:0]</obj_property>
+      <obj_property name="ObjectShortName">out3[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/newkey3" type="array">
+      <obj_property name="ElementShortName">newkey3[127:0]</obj_property>
+      <obj_property name="ObjectShortName">newkey3[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/out4" type="array">
+      <obj_property name="ElementShortName">out4[127:0]</obj_property>
+      <obj_property name="ObjectShortName">out4[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/newkey4" type="array">
+      <obj_property name="ElementShortName">newkey4[127:0]</obj_property>
+      <obj_property name="ObjectShortName">newkey4[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/text0" type="array">
+      <obj_property name="ElementShortName">text0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">text0[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/key0" type="array">
+      <obj_property name="ElementShortName">key0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key0[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/text1" type="array">
+      <obj_property name="ElementShortName">text1[127:0]</obj_property>
+      <obj_property name="ObjectShortName">text1[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/key1" type="array">
+      <obj_property name="ElementShortName">key1[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key1[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/text2" type="array">
+      <obj_property name="ElementShortName">text2[127:0]</obj_property>
+      <obj_property name="ObjectShortName">text2[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/key2" type="array">
+      <obj_property name="ElementShortName">key2[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key2[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/text3" type="array">
+      <obj_property name="ElementShortName">text3[127:0]</obj_property>
+      <obj_property name="ObjectShortName">text3[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/key3" type="array">
+      <obj_property name="ElementShortName">key3[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key3[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/text4" type="array">
+      <obj_property name="ElementShortName">text4[127:0]</obj_property>
+      <obj_property name="ObjectShortName">text4[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/key4" type="array">
+      <obj_property name="ElementShortName">key4[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key4[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/cnt0" type="array">
+      <obj_property name="ElementShortName">cnt0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt0[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/go" type="logic">
+      <obj_property name="ElementShortName">go</obj_property>
+      <obj_property name="ObjectShortName">go</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/e203_tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_apb_Des_Aes/u_DES_AES/desout" type="array">
+      <obj_property name="ElementShortName">desout[127:0]</obj_property>
+      <obj_property name="ObjectShortName">desout[127:0]</obj_property>
+   </wvobject>
+</wave_config>

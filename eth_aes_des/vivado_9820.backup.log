@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Nov  9 03:11:24 2022
+# Process ID: 9820
+# Current directory: C:/Users/001/Desktop/40_eth_udp_loop
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4004 C:\Users\001\Desktop\40_eth_udp_loop\eth_udp_loop.xpr
+# Log file: C:/Users/001/Desktop/40_eth_udp_loop/vivado.log
+# Journal file: C:/Users/001/Desktop/40_eth_udp_loop\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software/VIVADO/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 973.211 ; gain = 274.871
+update_compile_order -fileset sources_1
+exopen_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1202.398 ; gain = 12.488
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/impl_2/eth_udp_loop.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/impl_2/eth_udp_loop.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/impl_2/eth_udp_loop.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'adasda' at location 'uuid_06CCFDA245B957AE84CBFD85BFDE9AEB' from probes file, since it cannot be found on the programmed device.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  9 03:12:28 2022...

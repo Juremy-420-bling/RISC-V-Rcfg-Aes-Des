@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+Checksum           0xE4C895DD
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                   Checksum
+0x00000000    0x0015127F    Nov  9 02:55:07 2022    E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.runs/impl_2/aic_rv32.bit    0x01C6035D
+File Checksum Total                                                                                                                           0x01C6035D

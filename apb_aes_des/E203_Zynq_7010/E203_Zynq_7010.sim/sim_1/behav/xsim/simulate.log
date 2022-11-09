@@ -1,0 +1,66 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ITCM 0x00: 3040507330047073
+ITCM 0x01: 8581819310001197
+ITCM 0x02: ff01011310010117
+ITCM 0x03: 2742829300000297
+ITCM 0x04: 3051f07330529073
+ITCM 0x05: 0945051300000517
+ITCM 0x06: 08c5859300000597
+ITCM 0x07: 0000361702b50063
+ITCM 0x16: 393000ef3db000ef
+ITCM 0x20: 8793a0314781c3d8
+HummingBird SDK Build Time: Oct 21 2022, 19:12:14
+
+
+Download Mode: ILM
+
+
+CPU Frequency 542780 Hz
+
+
+Initializing interrupt
+
+
+Initializing interrupt successful
+
+
+0Sending plain text and key
+
+
+Sending text Successfully
+
+
+Modify Mode
+
+
+Modified
+
+
+Enabling
+
+
+Enabled
+
+
+Enter while loop
+
+
+Retrieve data success
+
+
+
+
+
+The decryption of AES:
+
+
+	0
+
+	0
+
+	D46EB4C9
+
+	228013B7
+

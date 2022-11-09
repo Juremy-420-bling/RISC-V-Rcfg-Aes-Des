@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov 10 01:27:08 2022
+# Process ID: 21584
+# Current directory: C:/Users/001/Desktop/40_eth_udp_loop
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3512 C:\Users\001\Desktop\40_eth_udp_loop\eth_udp_loop.xpr
+# Log file: C:/Users/001/Desktop/40_eth_udp_loop/vivado.log
+# Journal file: C:/Users/001/Desktop/40_eth_udp_loop\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software/VIVADO/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 983.469 ; gain = 242.598
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 10 01:29:58 2022...

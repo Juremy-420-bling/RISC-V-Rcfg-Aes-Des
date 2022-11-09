@@ -1,0 +1,1840 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov  8 23:11:06 2022
+# Process ID: 7348
+# Current directory: C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/synth_1
+# Command line: vivado.exe -log eth_udp_loop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source eth_udp_loop.tcl
+# Log file: C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/synth_1/eth_udp_loop.vds
+# Journal file: C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source eth_udp_loop.tcl -notrace
+Command: synth_design -top eth_udp_loop -part xc7a35tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12264 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 994.918 ; gain = 234.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'eth_udp_loop' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/synth_1/.Xil/Vivado-7348-DESKTOP-D1FV9G7/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (1#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/synth_1/.Xil/Vivado-7348-DESKTOP-D1FV9G7/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'gmii_to_rgmii' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/gmii_to_rgmii.v:23]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_rx.v:23]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [E:/software/VIVADO/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: FALSE - type: string 
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (2#1) [E:/software/VIVADO/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/software/VIVADO/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34892]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (3#1) [E:/software/VIVADO/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34892]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/software/VIVADO/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [E:/software/VIVADO/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/software/VIVADO/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1336]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (5#1) [E:/software/VIVADO/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1336]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_rx.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/software/VIVADO/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35014]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (6#1) [E:/software/VIVADO/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35014]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (7#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_tx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/software/VIVADO/Vivado/2019.2/scripts/rt/data/unisim_comp.v:49681]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (8#1) [E:/software/VIVADO/Vivado/2019.2/scripts/rt/data/unisim_comp.v:49681]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (9#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_tx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gmii_to_rgmii' (10#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/gmii_to_rgmii.v:23]
+INFO: [Synth 8-6157] synthesizing module 'arp' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_rx.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter st_idle bound to: 5'b00001 
+	Parameter st_preamble bound to: 5'b00010 
+	Parameter st_eth_head bound to: 5'b00100 
+	Parameter st_arp_data bound to: 5'b01000 
+	Parameter st_rx_end bound to: 5'b10000 
+	Parameter ETH_TPYE bound to: 16'b0000100000000110 
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (11#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+	Parameter st_idle bound to: 5'b00001 
+	Parameter st_preamble bound to: 5'b00010 
+	Parameter st_eth_head bound to: 5'b00100 
+	Parameter st_arp_data bound to: 5'b01000 
+	Parameter st_crc bound to: 5'b10000 
+	Parameter ETH_TYPE bound to: 16'b0000100000000110 
+	Parameter HD_TYPE bound to: 16'b0000000000000001 
+	Parameter PROTOCOL_TYPE bound to: 16'b0000100000000000 
+	Parameter MIN_DATA_NUM bound to: 16'b0000000000101110 
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (12#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/crc32_d8.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (13#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/crc32_d8.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (14#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'udp' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'udp_rx' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter st_idle bound to: 7'b0000001 
+	Parameter st_preamble bound to: 7'b0000010 
+	Parameter st_eth_head bound to: 7'b0000100 
+	Parameter st_ip_head bound to: 7'b0001000 
+	Parameter st_udp_head bound to: 7'b0010000 
+	Parameter st_rx_data bound to: 7'b0100000 
+	Parameter st_rx_end bound to: 7'b1000000 
+	Parameter ETH_TYPE bound to: 16'b0000100000000000 
+INFO: [Synth 8-6155] done synthesizing module 'udp_rx' (15#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'udp_tx' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:23]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+	Parameter st_idle bound to: 7'b0000001 
+	Parameter st_check_sum bound to: 7'b0000010 
+	Parameter st_preamble bound to: 7'b0000100 
+	Parameter st_eth_head bound to: 7'b0001000 
+	Parameter st_ip_head bound to: 7'b0010000 
+	Parameter st_tx_data bound to: 7'b0100000 
+	Parameter st_crc bound to: 7'b1000000 
+	Parameter ETH_TYPE bound to: 16'b0000100000000000 
+	Parameter MIN_DATA_NUM bound to: 16'b0000000000010010 
+WARNING: [Synth 8-5788] Register ip_head_reg[6] in module udp_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:202]
+WARNING: [Synth 8-5788] Register ip_head_reg[5] in module udp_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:202]
+WARNING: [Synth 8-5788] Register ip_head_reg[4] in module udp_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:202]
+WARNING: [Synth 8-5788] Register ip_head_reg[3] in module udp_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:202]
+WARNING: [Synth 8-5788] Register ip_head_reg[2] in module udp_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:202]
+WARNING: [Synth 8-5788] Register ip_head_reg[0] in module udp_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:202]
+INFO: [Synth 8-6155] done synthesizing module 'udp_tx' (16#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'udp' (17#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/synth_1/.Xil/Vivado-7348-DESKTOP-D1FV9G7/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (18#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/synth_1/.Xil/Vivado-7348-DESKTOP-D1FV9G7/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'read_and_out' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/new/read_and_out.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'read_and_out' (19#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/new/read_and_out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'des_aes_top' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AESkeyprocess' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/AESkeyprocess.v:2]
+INFO: [Synth 8-6157] synthesizing module 'aesinitkeyprocess' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/aesinitkeyprocess.v:2]
+INFO: [Synth 8-6157] synthesizing module 'SubBytes' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/SubBytes.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SubBytes' (20#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/SubBytes.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/aesinitkeyprocess.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'aesinitkeyprocess' (21#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/aesinitkeyprocess.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'AESkeyprocess' (22#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/AESkeyprocess.v:2]
+INFO: [Synth 8-6157] synthesizing module 'desdekey' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/desdekey.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DESkey' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/DESkey.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DESkey' (23#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/DESkey.v:1]
+INFO: [Synth 8-6157] synthesizing module 'left_shiftera' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/left_shiftera.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'left_shiftera' (24#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/left_shiftera.v:1]
+INFO: [Synth 8-6157] synthesizing module 'left_shifterb' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/left_shifterb.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'left_shifterb' (25#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/left_shifterb.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DESkeys' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/DESkeys.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'DESkeys' (26#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/DESkeys.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'desdekey' (27#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/desdekey.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/top.v:54]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/top.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/top.v:54]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/top.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/top.v:54]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/top.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/top.v:54]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/top.v:76]
+INFO: [Synth 8-6157] synthesizing module 'init_process' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/init_process.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'init_process' (28#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/init_process.v:7]
+INFO: [Synth 8-6157] synthesizing module 'process' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/process.v:4]
+INFO: [Synth 8-6157] synthesizing module 'desL' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/desL.v:2]
+INFO: [Synth 8-6157] synthesizing module 'desf' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/desf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'E_box' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/E_box.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'E_box' (29#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/E_box.v:3]
+INFO: [Synth 8-6157] synthesizing module 'S_box' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S_box.v:4]
+INFO: [Synth 8-6157] synthesizing module 'S1' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'S1' (30#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'S2' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'S2' (31#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'S3' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S3.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'S3' (32#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'S4' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'S4' (33#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'S5' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S5.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'S5' (34#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S5.v:1]
+INFO: [Synth 8-6157] synthesizing module 'S6' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S6.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'S6' (35#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S6.v:1]
+INFO: [Synth 8-6157] synthesizing module 'S7' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S7.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'S7' (36#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S7.v:1]
+INFO: [Synth 8-6157] synthesizing module 'S8' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'S8' (37#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'S_box' (38#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S_box.v:4]
+INFO: [Synth 8-6157] synthesizing module 'P' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/P.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'P' (39#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/P.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'desf' (40#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/desf.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'desL' (41#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/desL.v:2]
+INFO: [Synth 8-6157] synthesizing module 'aesde' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/ENCNEW.v:2]
+INFO: [Synth 8-6157] synthesizing module 'InvMixColumns' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/InvMixColumns.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'InvMixColumns' (42#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/InvMixColumns.v:2]
+INFO: [Synth 8-6157] synthesizing module 'InvSubBytes' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/InvSubBytes.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'InvSubBytes' (43#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/InvSubBytes.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'aesde' (44#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/ENCNEW.v:2]
+INFO: [Synth 8-6157] synthesizing module 'aesen' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/aesden.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MixColumns' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/MixColumns.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MixColumns' (45#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/MixColumns.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'aesen' (46#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/aesden.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'process' (47#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/process.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'des_aes_top' (48#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sync_fifo_2048x32b' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/synth_1/.Xil/Vivado-7348-DESKTOP-D1FV9G7/realtime/sync_fifo_2048x32b_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sync_fifo_2048x32b' (49#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/synth_1/.Xil/Vivado-7348-DESKTOP-D1FV9G7/realtime/sync_fifo_2048x32b_stub.v:6]
+WARNING: [Synth 8-7023] instance 'u_sync_fifo_2048x32b' of module 'sync_fifo_2048x32b' has 10 connections declared, but only 8 given [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:232]
+INFO: [Synth 8-6157] synthesizing module 'eth_ctrl' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'eth_ctrl' (50#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_ctrl.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:262]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/synth_1/.Xil/Vivado-7348-DESKTOP-D1FV9G7/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (51#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/synth_1/.Xil/Vivado-7348-DESKTOP-D1FV9G7/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_des_aes_top'. This will prevent further optimization [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:215]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_udp'. This will prevent further optimization [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:168]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'adasda'. This will prevent further optimization [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:262]
+INFO: [Synth 8-6155] done synthesizing module 'eth_udp_loop' (52#1) [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v:23]
+WARNING: [Synth 8-3331] design desL has unconnected port in[127]
+WARNING: [Synth 8-3331] design desL has unconnected port in[126]
+WARNING: [Synth 8-3331] design desL has unconnected port in[125]
+WARNING: [Synth 8-3331] design desL has unconnected port in[124]
+WARNING: [Synth 8-3331] design desL has unconnected port in[123]
+WARNING: [Synth 8-3331] design desL has unconnected port in[122]
+WARNING: [Synth 8-3331] design desL has unconnected port in[121]
+WARNING: [Synth 8-3331] design desL has unconnected port in[120]
+WARNING: [Synth 8-3331] design desL has unconnected port in[119]
+WARNING: [Synth 8-3331] design desL has unconnected port in[118]
+WARNING: [Synth 8-3331] design desL has unconnected port in[117]
+WARNING: [Synth 8-3331] design desL has unconnected port in[116]
+WARNING: [Synth 8-3331] design desL has unconnected port in[115]
+WARNING: [Synth 8-3331] design desL has unconnected port in[114]
+WARNING: [Synth 8-3331] design desL has unconnected port in[113]
+WARNING: [Synth 8-3331] design desL has unconnected port in[112]
+WARNING: [Synth 8-3331] design desL has unconnected port in[111]
+WARNING: [Synth 8-3331] design desL has unconnected port in[110]
+WARNING: [Synth 8-3331] design desL has unconnected port in[109]
+WARNING: [Synth 8-3331] design desL has unconnected port in[108]
+WARNING: [Synth 8-3331] design desL has unconnected port in[107]
+WARNING: [Synth 8-3331] design desL has unconnected port in[106]
+WARNING: [Synth 8-3331] design desL has unconnected port in[105]
+WARNING: [Synth 8-3331] design desL has unconnected port in[104]
+WARNING: [Synth 8-3331] design desL has unconnected port in[103]
+WARNING: [Synth 8-3331] design desL has unconnected port in[102]
+WARNING: [Synth 8-3331] design desL has unconnected port in[101]
+WARNING: [Synth 8-3331] design desL has unconnected port in[100]
+WARNING: [Synth 8-3331] design desL has unconnected port in[99]
+WARNING: [Synth 8-3331] design desL has unconnected port in[98]
+WARNING: [Synth 8-3331] design desL has unconnected port in[97]
+WARNING: [Synth 8-3331] design desL has unconnected port in[96]
+WARNING: [Synth 8-3331] design desL has unconnected port in[95]
+WARNING: [Synth 8-3331] design desL has unconnected port in[94]
+WARNING: [Synth 8-3331] design desL has unconnected port in[93]
+WARNING: [Synth 8-3331] design desL has unconnected port in[92]
+WARNING: [Synth 8-3331] design desL has unconnected port in[91]
+WARNING: [Synth 8-3331] design desL has unconnected port in[90]
+WARNING: [Synth 8-3331] design desL has unconnected port in[89]
+WARNING: [Synth 8-3331] design desL has unconnected port in[88]
+WARNING: [Synth 8-3331] design desL has unconnected port in[87]
+WARNING: [Synth 8-3331] design desL has unconnected port in[86]
+WARNING: [Synth 8-3331] design desL has unconnected port in[85]
+WARNING: [Synth 8-3331] design desL has unconnected port in[84]
+WARNING: [Synth 8-3331] design desL has unconnected port in[83]
+WARNING: [Synth 8-3331] design desL has unconnected port in[82]
+WARNING: [Synth 8-3331] design desL has unconnected port in[81]
+WARNING: [Synth 8-3331] design desL has unconnected port in[80]
+WARNING: [Synth 8-3331] design desL has unconnected port in[79]
+WARNING: [Synth 8-3331] design desL has unconnected port in[78]
+WARNING: [Synth 8-3331] design desL has unconnected port in[77]
+WARNING: [Synth 8-3331] design desL has unconnected port in[76]
+WARNING: [Synth 8-3331] design desL has unconnected port in[75]
+WARNING: [Synth 8-3331] design desL has unconnected port in[74]
+WARNING: [Synth 8-3331] design desL has unconnected port in[73]
+WARNING: [Synth 8-3331] design desL has unconnected port in[72]
+WARNING: [Synth 8-3331] design desL has unconnected port in[71]
+WARNING: [Synth 8-3331] design desL has unconnected port in[70]
+WARNING: [Synth 8-3331] design desL has unconnected port in[69]
+WARNING: [Synth 8-3331] design desL has unconnected port in[68]
+WARNING: [Synth 8-3331] design desL has unconnected port in[67]
+WARNING: [Synth 8-3331] design desL has unconnected port in[66]
+WARNING: [Synth 8-3331] design desL has unconnected port in[65]
+WARNING: [Synth 8-3331] design desL has unconnected port in[64]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[127]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[126]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[125]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[124]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[123]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[122]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[121]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[120]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[119]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[118]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[117]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[116]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[115]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[114]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[113]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[112]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[111]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[110]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[109]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[108]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[107]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[106]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[105]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[104]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[103]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[102]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[101]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[100]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[99]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[98]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[97]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[96]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[95]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[94]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[93]
+WARNING: [Synth 8-3331] design desL has unconnected port keym[92]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1090.000 ; gain = 329.406
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1090.000 ; gain = 329.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1090.000 ; gain = 329.406
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 1090.000 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'u_clk_wiz'
+Finished Parsing XDC File [c:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'u_clk_wiz'
+Parsing XDC File [c:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b/sync_fifo_2048x32b_in_context.xdc] for cell 'u_sync_fifo_2048x32b'
+Finished Parsing XDC File [c:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b/sync_fifo_2048x32b_in_context.xdc] for cell 'u_sync_fifo_2048x32b'
+Parsing XDC File [c:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_dasdasync_fifo_2048x32b'
+Finished Parsing XDC File [c:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_dasdasync_fifo_2048x32b'
+Parsing XDC File [c:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/ila_0_2/ila_0/ila_0_in_context.xdc] for cell 'adasda'
+Finished Parsing XDC File [c:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/ila_0_2/ila_0/ila_0_in_context.xdc] for cell 'adasda'
+Parsing XDC File [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:1]
+Finished Parsing XDC File [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/eth_udp_loop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/eth_udp_loop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1234.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1234.160 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'adasda' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_dasdasync_fifo_2048x32b' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_sync_fifo_2048x32b' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.387 ; gain = 477.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.387 ; gain = 477.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  c:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  c:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for u_clk_wiz. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_sync_fifo_2048x32b. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_dasdasync_fifo_2048x32b. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for adasda. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.387 ; gain = 477.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'arp_rx'
+INFO: [Synth 8-4471] merging register 'crc_clr_reg' into 'tx_done_reg' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:315]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[23][7:0]' into 'eth_head_reg[5][7:0]' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:181]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[22][7:0]' into 'eth_head_reg[4][7:0]' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:181]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[21][7:0]' into 'eth_head_reg[3][7:0]' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:181]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[20][7:0]' into 'eth_head_reg[2][7:0]' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:181]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[19][7:0]' into 'eth_head_reg[1][7:0]' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:181]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[18][7:0]' into 'eth_head_reg[0][7:0]' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v:181]
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'arp_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'udp_rx'
+INFO: [Synth 8-4471] merging register 'crc_clr_reg' into 'tx_done_reg' [C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v:406]
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'udp_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'cnt_reg' in module 'read_and_out'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                            00001 |                            00001
+             st_preamble |                            00010 |                            00010
+             st_eth_head |                            00100 |                            00100
+             st_arp_data |                            01000 |                            01000
+               st_rx_end |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'arp_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                            00001 |                            00001
+             st_preamble |                            00010 |                            00010
+             st_eth_head |                            00100 |                            00100
+             st_arp_data |                            01000 |                            01000
+                  st_crc |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'arp_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                          0000001 |                          0000001
+             st_preamble |                          0000010 |                          0000010
+             st_eth_head |                          0000100 |                          0000100
+              st_ip_head |                          0001000 |                          0001000
+             st_udp_head |                          0010000 |                          0010000
+              st_rx_data |                          0100000 |                          0100000
+               st_rx_end |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'udp_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                          0000001 |                          0000001
+            st_check_sum |                          0000010 |                          0000010
+             st_preamble |                          0000100 |                          0000100
+             st_eth_head |                          0001000 |                          0001000
+              st_ip_head |                          0010000 |                          0010000
+              st_tx_data |                          0100000 |                          0100000
+                  st_crc |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'udp_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                          1000000 |                             0000
+*
+                 iSTATE0 |                          0000001 |                             0101
+                  iSTATE |                          0100000 |                             0110
+                 iSTATE1 |                          0000010 |                             0100
+                 iSTATE2 |                          0000100 |                             0011
+                 iSTATE4 |                          0001000 |                             0010
+                 iSTATE3 |                          0010000 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cnt_reg' using encoding 'one-hot' in module 'read_and_out'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1238.387 ; gain = 477.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |eth_udp_loop__GB0 |           1|     41396|
+|2     |eth_udp_loop__GB1 |           1|     10791|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  10 Input     20 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 9     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input    128 Bit         XORs := 9     
+	   2 Input     48 Bit         XORs := 4     
+	   2 Input     32 Bit         XORs := 44    
+	   2 Input      8 Bit         XORs := 234   
+	   3 Input      1 Bit         XORs := 652   
+	   4 Input      1 Bit         XORs := 386   
+	   2 Input      1 Bit         XORs := 336   
+	   6 Input      1 Bit         XORs := 14    
+	   8 Input      1 Bit         XORs := 2     
+	   5 Input      1 Bit         XORs := 8     
+	   7 Input      1 Bit         XORs := 14    
+	  10 Input      1 Bit         XORs := 4     
+	   9 Input      1 Bit         XORs := 6     
+	  12 Input      1 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 8     
+	               48 Bit    Registers := 4     
+	               32 Bit    Registers := 15    
+	               16 Bit    Registers := 9     
+	                8 Bit    Registers := 68    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 10    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 33    
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 30    
+	  17 Input    128 Bit        Muxes := 4     
+	   2 Input     48 Bit        Muxes := 17    
+	   6 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 8     
+	   4 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 4     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 12    
+	   8 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 8     
+	   4 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 14    
+	   8 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 8     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 43    
+	  11 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 3     
+	   6 Input      5 Bit        Muxes := 4     
+	   7 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 13    
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 77    
+	   5 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 22    
+	   4 Input      1 Bit        Muxes := 14    
+	   6 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module eth_udp_loop 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+Module read_and_out 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   7 Input      7 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module aesinitkeyprocess__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 1     
+Module aesinitkeyprocess__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 1     
+Module aesinitkeyprocess__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 1     
+Module aesinitkeyprocess__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 1     
+Module aesinitkeyprocess__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 1     
+Module aesinitkeyprocess__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 1     
+Module aesinitkeyprocess__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 1     
+Module aesinitkeyprocess__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 1     
+Module aesinitkeyprocess__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 1     
+Module aesinitkeyprocess 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 1     
+Module init_process 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 2     
+Module desf__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     48 Bit         XORs := 1     
+Module desL__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module InvMixColumns__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module InvMixColumns__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module InvMixColumns__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module InvMixColumns__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module aesde__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module MixColumns__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module MixColumns__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module MixColumns__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module MixColumns__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module aesen__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module process__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 3     
+Module desf__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     48 Bit         XORs := 1     
+Module desL__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module InvMixColumns__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module InvMixColumns__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module InvMixColumns__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module InvMixColumns__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module aesde__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module MixColumns__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module MixColumns__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module MixColumns__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module MixColumns__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module aesen__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module process__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 3     
+Module desf__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     48 Bit         XORs := 1     
+Module desL__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module InvMixColumns__15 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module InvMixColumns__14 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module InvMixColumns__13 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module InvMixColumns__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module aesde__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module MixColumns__15 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module MixColumns__14 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module MixColumns__13 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module MixColumns__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module aesen__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module process__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 3     
+Module desf 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     48 Bit         XORs := 1     
+Module desL 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module InvMixColumns__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module InvMixColumns__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module InvMixColumns__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module InvMixColumns 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 20    
+Module aesde 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module MixColumns__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module MixColumns__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module MixColumns__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module MixColumns 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 12    
+Module aesen 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module process 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 3     
+Module des_aes_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 12    
+	  17 Input    128 Bit        Muxes := 4     
+	   2 Input     48 Bit        Muxes := 16    
+	   2 Input      5 Bit        Muxes := 3     
+	  11 Input      5 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	  14 Input      1 Bit        Muxes := 1     
+Module eth_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module udp_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	   8 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      7 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 10    
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 10    
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 17    
+	   8 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module udp_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	  10 Input     20 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 23    
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   8 Input     32 Bit        Muxes := 3     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 7     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 5     
+	   8 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 10    
+	   8 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+Module crc32_d8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module arp_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 3     
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   6 Input     48 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   6 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 5     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 18    
+	   4 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 3     
+	   6 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 23    
+	   4 Input      1 Bit        Muxes := 3     
+Module arp_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 45    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   6 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 2     
+Module crc32_d8__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'i_0/u_des_aes_top/cnt3_reg[0]' (FDE) to 'i_0/u_des_aes_top/cnt1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_des_aes_top/cnt3_reg[1]' (FDE) to 'i_0/u_des_aes_top/cnt1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_des_aes_top/cnt1_reg[0]' (FDE) to 'i_0/u_des_aes_top/cnt2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_des_aes_top/cnt1_reg[1]' (FDE) to 'i_0/u_des_aes_top/cnt2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_des_aes_top/cnt4_reg[0]' (FDE) to 'i_0/u_des_aes_top/cnt2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_des_aes_top/cnt4_reg[1]' (FDE) to 'i_0/u_des_aes_top/cnt2_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/u_des_aes_top/\cnt2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_des_aes_top/\cnt2_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/check_buffer_reg[28]' (FDCE) to 'i_1/u_udp/u_udp_tx/check_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/check_buffer_reg[29]' (FDCE) to 'i_1/u_udp/u_udp_tx/check_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/check_buffer_reg[30]' (FDCE) to 'i_1/u_udp/u_udp_tx/check_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/check_buffer_reg[31]' (FDCE) to 'i_1/u_udp/u_udp_tx/check_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/check_buffer_reg[20]' (FDCE) to 'i_1/u_udp/u_udp_tx/check_buffer_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/check_buffer_reg[21]' (FDCE) to 'i_1/u_udp/u_udp_tx/check_buffer_reg[22]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/check_buffer_reg[22]' (FDCE) to 'i_1/u_udp/u_udp_tx/check_buffer_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/check_buffer_reg[23]' (FDCE) to 'i_1/u_udp/u_udp_tx/check_buffer_reg[24]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/check_buffer_reg[24]' (FDCE) to 'i_1/u_udp/u_udp_tx/check_buffer_reg[25]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/check_buffer_reg[25]' (FDCE) to 'i_1/u_udp/u_udp_tx/check_buffer_reg[26]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/check_buffer_reg[26]' (FDCE) to 'i_1/u_udp/u_udp_tx/check_buffer_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/u_udp/\u_udp_tx/check_buffer_reg[27] )
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/udp_num_reg[0]' (FDCE) to 'i_1/u_udp/u_udp_tx/total_num_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/total_num_reg[0]' (FDCE) to 'i_1/u_udp/u_udp_tx/tx_data_num_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/udp_num_reg[1]' (FDCE) to 'i_1/u_udp/u_udp_tx/tx_data_num_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[7][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[5][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[4][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[13][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[12][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[11][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[10][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[9][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[8][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[7][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[6][4] )
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][28]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[2][28]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[2][24]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[0][28]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][28]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][20]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[2][20]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[2][16]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[0][20]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][20]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][12]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[1][12]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[6][12]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][12]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][4]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[1][4]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[1][8]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[6][4]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][4]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[7][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[5][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[4][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[13][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[12][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[11][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[10][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[9][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[8][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[7][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[15][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[14][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[13][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[12][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[11][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[10][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[9][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[8][4] )
+INFO: [Synth 8-3886] merging instance 'i_1/u_arp/u_arp_tx/arp_data_reg[7][4]' (FDCE) to 'i_1/u_arp/u_arp_tx/arp_data_reg[7][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[4][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[17][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[16][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[7][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[5][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/preamble_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[13][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[12][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[10][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[9][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[8][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[7][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/u_udp/\u_udp_tx/eth_head_reg[6][0] )
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][24]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[2][24]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[2][29]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[0][24]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][24]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][16]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[2][16]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[0][16]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[6][16]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][16]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][8]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[1][8]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[6][8]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][8]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][0]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[1][0]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[6][0]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][0]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[7][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[5][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/preamble_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[13][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[12][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[10][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[9][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[8][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[7][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/eth_head_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[15][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[14][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[13][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[12][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[10][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[9][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[8][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\u_arp/u_arp_tx/arp_data_reg[17][0] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][29]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[2][29]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[2][21]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[0][29]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][29]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][21]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[2][21]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[2][25]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[0][21]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][21]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][13]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[1][13]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[6][13]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][13]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][5]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[1][5]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[1][9]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[6][5]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][5]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_arp/u_arp_tx/arp_data_reg[7][5]' (FDCE) to 'i_1/u_arp/u_arp_tx/arp_data_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][25]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[2][25]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[2][17]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[0][25]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][25]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][17]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[2][17]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[2][22]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[0][17]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][17]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][9]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[1][9]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[6][9]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][9]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][1]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[1][1]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[6][1]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][1]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][30]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[0][30]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][30]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][22]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[2][22]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[2][26]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[0][22]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][22]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][14]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[6][14]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[5][14]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[3][6]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[1][6]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[1][10]'
+INFO: [Synth 8-3886] merging instance 'i_1/u_udp/u_udp_tx/ip_head_reg[6][6]' (FDE) to 'i_1/u_udp/u_udp_tx/ip_head_reg[3][2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1349.996 ; gain = 589.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+-------------------------+---------------+----------------+
+|Module Name       | RTL Object              | Depth x Width | Implemented As | 
++------------------+-------------------------+---------------+----------------+
+|SubBytes          | S10                     | 256x8         | LUT            | 
+|SubBytes          | S9                      | 256x8         | LUT            | 
+|SubBytes          | S0                      | 256x8         | LUT            | 
+|SubBytes          | S                       | 256x8         | LUT            | 
+|S1                | out                     | 64x4          | LUT            | 
+|S2                | out                     | 64x4          | LUT            | 
+|S3                | out                     | 64x4          | LUT            | 
+|S4                | out                     | 64x4          | LUT            | 
+|S5                | out                     | 64x4          | LUT            | 
+|S6                | out                     | 64x4          | LUT            | 
+|S7                | out                     | 64x4          | LUT            | 
+|S8                | out                     | 64x4          | LUT            | 
+|InvSubBytes       | S13                     | 256x8         | LUT            | 
+|InvSubBytes       | S12                     | 256x8         | LUT            | 
+|InvSubBytes       | S11                     | 256x8         | LUT            | 
+|InvSubBytes       | S                       | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S10                 | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S9                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S0                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S                   | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S10                 | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S9                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S0                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S                   | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S10                 | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S9                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S0                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S                   | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S10                 | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S9                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S0                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S                   | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S10                 | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S9                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S0                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S                   | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S10                 | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S9                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S0                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S                   | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S10                 | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S9                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S0                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S                   | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S10                 | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S9                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S0                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S                   | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S10                 | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S9                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S0                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S                   | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S10                 | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S9                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S0                  | 256x8         | LUT            | 
+|aesinitkeyprocess | SBK/S                   | 256x8         | LUT            | 
+|desL              | u_desf/u_S_box/u_S8/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S7/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S6/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S5/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S4/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S3/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S2/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S1/out | 64x4          | LUT            | 
+|aesde             | SB0/S13                 | 256x8         | LUT            | 
+|aesde             | SB0/S12                 | 256x8         | LUT            | 
+|aesde             | SB0/S11                 | 256x8         | LUT            | 
+|aesde             | SB0/S                   | 256x8         | LUT            | 
+|aesde             | SB1/S13                 | 256x8         | LUT            | 
+|aesde             | SB1/S12                 | 256x8         | LUT            | 
+|aesde             | SB1/S11                 | 256x8         | LUT            | 
+|aesde             | SB1/S                   | 256x8         | LUT            | 
+|aesde             | SB2/S13                 | 256x8         | LUT            | 
+|aesde             | SB2/S12                 | 256x8         | LUT            | 
+|aesde             | SB2/S11                 | 256x8         | LUT            | 
+|aesde             | SB2/S                   | 256x8         | LUT            | 
+|aesde             | SB3/S13                 | 256x8         | LUT            | 
+|aesde             | SB3/S12                 | 256x8         | LUT            | 
+|aesde             | SB3/S11                 | 256x8         | LUT            | 
+|aesde             | SB3/S                   | 256x8         | LUT            | 
+|aesen             | SB1/S10                 | 256x8         | LUT            | 
+|aesen             | SB2/S9                  | 256x8         | LUT            | 
+|aesen             | SB3/S0                  | 256x8         | LUT            | 
+|aesen             | SB0/S                   | 256x8         | LUT            | 
+|aesen             | SB2/S10                 | 256x8         | LUT            | 
+|aesen             | SB3/S9                  | 256x8         | LUT            | 
+|aesen             | SB0/S0                  | 256x8         | LUT            | 
+|aesen             | SB1/S                   | 256x8         | LUT            | 
+|aesen             | SB3/S10                 | 256x8         | LUT            | 
+|aesen             | SB0/S9                  | 256x8         | LUT            | 
+|aesen             | SB1/S0                  | 256x8         | LUT            | 
+|aesen             | SB2/S                   | 256x8         | LUT            | 
+|aesen             | SB0/S10                 | 256x8         | LUT            | 
+|aesen             | SB1/S9                  | 256x8         | LUT            | 
+|aesen             | SB2/S0                  | 256x8         | LUT            | 
+|aesen             | SB3/S                   | 256x8         | LUT            | 
+|desL              | u_desf/u_S_box/u_S8/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S7/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S6/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S5/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S4/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S3/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S2/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S1/out | 64x4          | LUT            | 
+|aesde             | SB0/S13                 | 256x8         | LUT            | 
+|aesde             | SB0/S12                 | 256x8         | LUT            | 
+|aesde             | SB0/S11                 | 256x8         | LUT            | 
+|aesde             | SB0/S                   | 256x8         | LUT            | 
+|aesde             | SB1/S13                 | 256x8         | LUT            | 
+|aesde             | SB1/S12                 | 256x8         | LUT            | 
+|aesde             | SB1/S11                 | 256x8         | LUT            | 
+|aesde             | SB1/S                   | 256x8         | LUT            | 
+|aesde             | SB2/S13                 | 256x8         | LUT            | 
+|aesde             | SB2/S12                 | 256x8         | LUT            | 
+|aesde             | SB2/S11                 | 256x8         | LUT            | 
+|aesde             | SB2/S                   | 256x8         | LUT            | 
+|aesde             | SB3/S13                 | 256x8         | LUT            | 
+|aesde             | SB3/S12                 | 256x8         | LUT            | 
+|aesde             | SB3/S11                 | 256x8         | LUT            | 
+|aesde             | SB3/S                   | 256x8         | LUT            | 
+|aesen             | SB1/S10                 | 256x8         | LUT            | 
+|aesen             | SB2/S9                  | 256x8         | LUT            | 
+|aesen             | SB3/S0                  | 256x8         | LUT            | 
+|aesen             | SB0/S                   | 256x8         | LUT            | 
+|aesen             | SB2/S10                 | 256x8         | LUT            | 
+|aesen             | SB3/S9                  | 256x8         | LUT            | 
+|aesen             | SB0/S0                  | 256x8         | LUT            | 
+|aesen             | SB1/S                   | 256x8         | LUT            | 
+|aesen             | SB3/S10                 | 256x8         | LUT            | 
+|aesen             | SB0/S9                  | 256x8         | LUT            | 
+|aesen             | SB1/S0                  | 256x8         | LUT            | 
+|aesen             | SB2/S                   | 256x8         | LUT            | 
+|aesen             | SB0/S10                 | 256x8         | LUT            | 
+|aesen             | SB1/S9                  | 256x8         | LUT            | 
+|aesen             | SB2/S0                  | 256x8         | LUT            | 
+|aesen             | SB3/S                   | 256x8         | LUT            | 
+|desL              | u_desf/u_S_box/u_S8/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S7/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S6/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S5/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S4/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S3/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S2/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S1/out | 64x4          | LUT            | 
+|aesde             | SB0/S13                 | 256x8         | LUT            | 
+|aesde             | SB0/S12                 | 256x8         | LUT            | 
+|aesde             | SB0/S11                 | 256x8         | LUT            | 
+|aesde             | SB0/S                   | 256x8         | LUT            | 
+|aesde             | SB1/S13                 | 256x8         | LUT            | 
+|aesde             | SB1/S12                 | 256x8         | LUT            | 
+|aesde             | SB1/S11                 | 256x8         | LUT            | 
+|aesde             | SB1/S                   | 256x8         | LUT            | 
+|aesde             | SB2/S13                 | 256x8         | LUT            | 
+|aesde             | SB2/S12                 | 256x8         | LUT            | 
+|aesde             | SB2/S11                 | 256x8         | LUT            | 
+|aesde             | SB2/S                   | 256x8         | LUT            | 
+|aesde             | SB3/S13                 | 256x8         | LUT            | 
+|aesde             | SB3/S12                 | 256x8         | LUT            | 
+|aesde             | SB3/S11                 | 256x8         | LUT            | 
+|aesde             | SB3/S                   | 256x8         | LUT            | 
+|aesen             | SB1/S10                 | 256x8         | LUT            | 
+|aesen             | SB2/S9                  | 256x8         | LUT            | 
+|aesen             | SB3/S0                  | 256x8         | LUT            | 
+|aesen             | SB0/S                   | 256x8         | LUT            | 
+|aesen             | SB2/S10                 | 256x8         | LUT            | 
+|aesen             | SB3/S9                  | 256x8         | LUT            | 
+|aesen             | SB0/S0                  | 256x8         | LUT            | 
+|aesen             | SB1/S                   | 256x8         | LUT            | 
+|aesen             | SB3/S10                 | 256x8         | LUT            | 
+|aesen             | SB0/S9                  | 256x8         | LUT            | 
+|aesen             | SB1/S0                  | 256x8         | LUT            | 
+|aesen             | SB2/S                   | 256x8         | LUT            | 
+|aesen             | SB0/S10                 | 256x8         | LUT            | 
+|aesen             | SB1/S9                  | 256x8         | LUT            | 
+|aesen             | SB2/S0                  | 256x8         | LUT            | 
+|aesen             | SB3/S                   | 256x8         | LUT            | 
+|desL              | u_desf/u_S_box/u_S8/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S7/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S6/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S5/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S4/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S3/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S2/out | 64x4          | LUT            | 
+|desL              | u_desf/u_S_box/u_S1/out | 64x4          | LUT            | 
+|aesde             | SB0/S13                 | 256x8         | LUT            | 
+|aesde             | SB0/S12                 | 256x8         | LUT            | 
+|aesde             | SB0/S11                 | 256x8         | LUT            | 
+|aesde             | SB0/S                   | 256x8         | LUT            | 
+|aesde             | SB1/S13                 | 256x8         | LUT            | 
+|aesde             | SB1/S12                 | 256x8         | LUT            | 
+|aesde             | SB1/S11                 | 256x8         | LUT            | 
+|aesde             | SB1/S                   | 256x8         | LUT            | 
+|aesde             | SB2/S13                 | 256x8         | LUT            | 
+|aesde             | SB2/S12                 | 256x8         | LUT            | 
+|aesde             | SB2/S11                 | 256x8         | LUT            | 
+|aesde             | SB2/S                   | 256x8         | LUT            | 
+|aesde             | SB3/S13                 | 256x8         | LUT            | 
+|aesde             | SB3/S12                 | 256x8         | LUT            | 
+|aesde             | SB3/S11                 | 256x8         | LUT            | 
+|aesde             | SB3/S                   | 256x8         | LUT            | 
+|aesen             | SB1/S10                 | 256x8         | LUT            | 
+|aesen             | SB2/S9                  | 256x8         | LUT            | 
+|aesen             | SB3/S0                  | 256x8         | LUT            | 
+|aesen             | SB0/S                   | 256x8         | LUT            | 
+|aesen             | SB2/S10                 | 256x8         | LUT            | 
+|aesen             | SB3/S9                  | 256x8         | LUT            | 
+|aesen             | SB0/S0                  | 256x8         | LUT            | 
+|aesen             | SB1/S                   | 256x8         | LUT            | 
+|aesen             | SB3/S10                 | 256x8         | LUT            | 
+|aesen             | SB0/S9                  | 256x8         | LUT            | 
+|aesen             | SB1/S0                  | 256x8         | LUT            | 
+|aesen             | SB2/S                   | 256x8         | LUT            | 
+|aesen             | SB0/S10                 | 256x8         | LUT            | 
+|aesen             | SB1/S9                  | 256x8         | LUT            | 
+|aesen             | SB2/S0                  | 256x8         | LUT            | 
+|aesen             | SB3/S                   | 256x8         | LUT            | 
++------------------+-------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |eth_udp_loop__GB0 |           1|     13803|
+|2     |eth_udp_loop__GB1 |           1|      4647|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1349.996 ; gain = 589.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1387.508 ; gain = 626.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |eth_udp_loop__GB0 |           1|     13843|
+|2     |eth_udp_loop__GB1 |           1|      4647|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1387.508 ; gain = 626.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1387.508 ; gain = 626.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1387.508 ; gain = 626.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1387.508 ; gain = 626.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1387.508 ; gain = 626.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1387.508 ; gain = 626.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1387.508 ; gain = 626.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |fifo_generator_0   |         1|
+|2     |sync_fifo_2048x32b |         1|
+|3     |ila_0              |         1|
+|4     |clk_wiz            |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |clk_wiz            |     1|
+|2     |fifo_generator_0   |     1|
+|3     |ila_0              |     1|
+|4     |sync_fifo_2048x32b |     1|
+|5     |BUFG               |     1|
+|6     |BUFIO              |     1|
+|7     |CARRY4             |    81|
+|8     |IDDR               |     5|
+|9     |IDELAYCTRL         |     1|
+|10    |IDELAYE2           |     5|
+|11    |LUT1               |    72|
+|12    |LUT2               |   461|
+|13    |LUT3               |   212|
+|14    |LUT4               |   560|
+|15    |LUT5               |  1062|
+|16    |LUT6               |  5013|
+|17    |MUXF7              |  1609|
+|18    |MUXF8              |   737|
+|19    |ODDR               |     5|
+|20    |FDCE               |   659|
+|21    |FDPE               |   176|
+|22    |FDRE               |  1137|
+|23    |FDSE               |    10|
+|24    |IBUF               |     7|
+|25    |OBUF               |     7|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+------------------+---------------------+------+
+|      |Instance          |Module               |Cells |
++------+------------------+---------------------+------+
+|1     |top               |                     | 11989|
+|2     |  u_des_aes_top   |des_aes_top          |  9292|
+|3     |    FINALKEY      |AESkeyprocess        |  3669|
+|4     |      keyss1      |aesinitkeyprocess    |  2883|
+|5     |        SBK       |SubBytes_55          |  2883|
+|6     |      keyss10     |aesinitkeyprocess_37 |    94|
+|7     |        SBK       |SubBytes_54          |    94|
+|8     |      keyss2      |aesinitkeyprocess_38 |    95|
+|9     |        SBK       |SubBytes_53          |    95|
+|10    |      keyss3      |aesinitkeyprocess_39 |    94|
+|11    |        SBK       |SubBytes_52          |    94|
+|12    |      keyss4      |aesinitkeyprocess_40 |    85|
+|13    |        SBK       |SubBytes_51          |    85|
+|14    |      keyss5      |aesinitkeyprocess_41 |    89|
+|15    |        SBK       |SubBytes_50          |    89|
+|16    |      keyss6      |aesinitkeyprocess_42 |    77|
+|17    |        SBK       |SubBytes_49          |    77|
+|18    |      keyss7      |aesinitkeyprocess_43 |    96|
+|19    |        SBK       |SubBytes_48          |    96|
+|20    |      keyss8      |aesinitkeyprocess_44 |    80|
+|21    |        SBK       |SubBytes_47          |    80|
+|22    |      keyss9      |aesinitkeyprocess_45 |    76|
+|23    |        SBK       |SubBytes_46          |    76|
+|24    |    process1      |process              |  1173|
+|25    |      AESSSSS     |aesen_28             |  1173|
+|26    |        MX0       |MixColumns_29        |    84|
+|27    |        MX1       |MixColumns_30        |   100|
+|28    |        MX2       |MixColumns_31        |    53|
+|29    |        MX3       |MixColumns_32        |    36|
+|30    |        SB0       |SubBytes_33          |    97|
+|31    |        SB1       |SubBytes_34          |    96|
+|32    |        SB2       |SubBytes_35          |    97|
+|33    |        SB3       |SubBytes_36          |    97|
+|34    |    process2      |process_1            |   656|
+|35    |      AESSSSS     |aesen_19             |   656|
+|36    |        MX0       |MixColumns_20        |    36|
+|37    |        MX1       |MixColumns_21        |    36|
+|38    |        MX2       |MixColumns_22        |    36|
+|39    |        MX3       |MixColumns_23        |    36|
+|40    |        SB0       |SubBytes_24          |   103|
+|41    |        SB1       |SubBytes_25          |   100|
+|42    |        SB2       |SubBytes_26          |   105|
+|43    |        SB3       |SubBytes_27          |   113|
+|44    |    process3      |process_2            |  1182|
+|45    |      AESSSSS     |aesen_10             |  1182|
+|46    |        MX0       |MixColumns_11        |   124|
+|47    |        MX1       |MixColumns_12        |    36|
+|48    |        MX2       |MixColumns_13        |    56|
+|49    |        MX3       |MixColumns_14        |    56|
+|50    |        SB0       |SubBytes_15          |    96|
+|51    |        SB1       |SubBytes_16          |    96|
+|52    |        SB2       |SubBytes_17          |    96|
+|53    |        SB3       |SubBytes_18          |    96|
+|54    |    process4      |process_3            |  1104|
+|55    |      AESSSSS     |aesen                |  1104|
+|56    |        MX0       |MixColumns           |    36|
+|57    |        MX1       |MixColumns_4         |    36|
+|58    |        MX2       |MixColumns_5         |   164|
+|59    |        MX3       |MixColumns_6         |   164|
+|60    |        SB0       |SubBytes             |    96|
+|61    |        SB1       |SubBytes_7           |    96|
+|62    |        SB2       |SubBytes_8           |    96|
+|63    |        SB3       |SubBytes_9           |    96|
+|64    |  u_udp           |udp                  |  1276|
+|65    |    u_crc32_d8    |crc32_d8_0           |    76|
+|66    |    u_udp_rx      |udp_rx               |   413|
+|67    |    u_udp_tx      |udp_tx               |   787|
+|68    |  mmmmm           |read_and_out         |   281|
+|69    |  u_arp           |arp                  |   910|
+|70    |    u_arp_rx      |arp_rx               |   566|
+|71    |    u_arp_tx      |arp_tx               |   282|
+|72    |    u_crc32_d8    |crc32_d8             |    62|
+|73    |  u_eth_ctrl      |eth_ctrl             |     2|
+|74    |  u_gmii_to_rgmii |gmii_to_rgmii        |    30|
+|75    |    u_rgmii_rx    |rgmii_rx             |    25|
+|76    |    u_rgmii_tx    |rgmii_tx             |     5|
++------+------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1387.508 ; gain = 626.914
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 1387.508 ; gain = 478.527
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1387.508 ; gain = 626.914
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.187 . Memory (MB): peak = 1387.508 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2442 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1387.508 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+355 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1387.508 ; gain = 900.137
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1387.508 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/synth_1/eth_udp_loop.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file eth_udp_loop_utilization_synth.rpt -pb eth_udp_loop_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  8 23:12:28 2022...

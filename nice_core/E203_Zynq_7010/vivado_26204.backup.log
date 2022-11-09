@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov  1 16:34:35 2022
+# Process ID: 26204
+# Current directory: E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26136 E:\BaiduNetdiskDownload\E203_P3\E203_Zynq_7010\E203_Zynq_7010.xpr
+# Log file: E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/vivado.log
+# Journal file: E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.xpr
+INFO: [Project 1-313] Project file moved from 'E:/BaiduNetdiskDownload/E203_P2/E203_Zynq_7010' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software/VIVADO/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'PLL' is locked:
+* Current project part 'xc7a35tfgg484-2' and the part 'xc7z010clg400-2' used to customize the IP 'PLL' do not match.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  2 18:32:45 2022...

@@ -1,0 +1,147 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Apr  2 10:43:52 2020
+| Host         : USER-20180123QP running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file eth_udp_loop_control_sets_placed.rpt
+| Design       : eth_udp_loop
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    70 |
+| Unused register locations in slices containing registers |   181 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|      2 |            7 |
+|      3 |            1 |
+|      4 |            4 |
+|      5 |            6 |
+|      6 |            3 |
+|      7 |            3 |
+|      8 |           13 |
+|      9 |            2 |
+|     11 |            1 |
+|     12 |            2 |
+|     14 |            1 |
+|     15 |            1 |
+|    16+ |           24 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            1 |
+| No           | No                    | Yes                    |              61 |           36 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              47 |           22 |
+| Yes          | No                    | Yes                    |             827 |          251 |
+| Yes          | Yes                   | No                     |              32 |            7 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|              Clock Signal             |                                              Enable Signal                                              |                                                            Set/Reset Signal                                                           | Slice Load Count | Bel Load Count |
++---------------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                         | u_arp/u_arp_rx/cnt[4]_i_3_n_0                                                                                                         |                1 |              1 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/arp_rx_done_i_1_n_0                                                                      | u_udp/u_udp_tx/sys_rst_n                                                                                                              |                1 |              1 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                         | u_sync_fifo_2048x32b/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/AR[0]                                                                |                1 |              2 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                         | u_sync_fifo_2048x32b/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_d2                                                               |                1 |              2 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                         | u_arp/u_arp_rx/sys_rst_n_0                                                                                                            |                1 |              2 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                         | u_udp/u_udp_rx/sys_rst_n_1                                                                                                            |                1 |              2 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/data_cnt                                                                                 | u_udp/u_udp_rx/sys_rst_n_1                                                                                                            |                1 |              2 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/data_cnt                                                                                 | u_arp/u_arp_tx/sys_rst_n                                                                                                              |                1 |              2 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/data_cnt                                                                                 | u_udp/u_udp_rx/sys_rst_n_1                                                                                                            |                1 |              2 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                         | u_sync_fifo_2048x32b/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff[1] |                1 |              3 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                         |                                                                                                                                       |                1 |              4 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/check_buffer                                                                             | u_arp/u_arp_tx/sys_rst_n                                                                                                              |                1 |              4 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/ip_head_byte_num                                                                         | u_arp/u_arp_rx/sys_rst_n                                                                                                              |                1 |              4 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/des_ip                                                                                   | u_arp/u_arp_rx/sys_rst_n                                                                                                              |                1 |              4 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/cnt[4]_i_1_n_0                                                                           | u_arp/u_arp_rx/cnt[4]_i_3_n_0                                                                                                         |                2 |              5 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/cnt                                                                                      | u_arp/u_arp_rx/sys_rst_n                                                                                                              |                3 |              5 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/tx_data_num0                                                                             | u_arp/u_arp_rx/sys_rst_n                                                                                                              |                2 |              5 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/real_add_cnt                                                                             | u_arp/u_arp_rx/sys_rst_n                                                                                                              |                1 |              5 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/cnt                                                                                      | u_udp/u_udp_tx/sys_rst_n                                                                                                              |                3 |              5 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_tx/data_cnt[4]_i_1_n_0                                                                      | u_arp/u_arp_rx/sys_rst_n_0                                                                                                            |                1 |              5 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/src_ip_t[31]_i_1_n_0                                                                     | u_arp/u_arp_rx/cnt[4]_i_3_n_0                                                                                                         |                3 |              6 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/des_ip                                                                                   | u_udp/u_udp_rx/sys_rst_n_0                                                                                                            |                2 |              6 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_tx/cnt[5]_i_1_n_0                                                                           | u_udp/u_udp_rx/sys_rst_n_0                                                                                                            |                4 |              6 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/tx_en_d1_reg[0]                                                                          | u_udp/u_udp_tx/sys_rst_n                                                                                                              |                3 |              7 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                         | u_arp/u_arp_rx/sys_rst_n                                                                                                              |                4 |              7 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                         | u_udp/u_udp_rx/sys_rst_n_0                                                                                                            |                5 |              7 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/op_data[7]_i_1_n_0                                                                       | u_arp/u_arp_rx/sys_rst_n                                                                                                              |                2 |              8 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/op_data[15]_i_1_n_0                                                                      | u_arp/u_arp_rx/sys_rst_n                                                                                                              |                2 |              8 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/eth_type[15]_i_1_n_0                                                                     | u_arp/u_arp_rx/sys_rst_n                                                                                                              |                2 |              8 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/des_mac                                                                                  | u_udp/u_udp_rx/sys_rst_n                                                                                                              |                3 |              8 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/rec_data[15]                                                                             | u_udp/u_udp_rx/sys_rst_n_1                                                                                                            |                2 |              8 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/rec_data[23]                                                                             | u_udp/u_udp_rx/sys_rst_n_1                                                                                                            |                3 |              8 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/rec_data[31]                                                                             | u_udp/u_udp_rx/sys_rst_n_1                                                                                                            |                1 |              8 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/udp_byte_num_0[7]                                                                        | u_udp/u_udp_rx/sys_rst_n                                                                                                              |                1 |              8 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/udp_byte_num_0[15]                                                                       | u_udp/u_udp_rx/sys_rst_n                                                                                                              |                3 |              8 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_tx/gmii_txd[7]_i_1_n_0                                                                      | u_udp/u_udp_tx/sys_rst_n                                                                                                              |                7 |              8 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/eth_type[11]                                                                             | u_udp/u_udp_rx/sys_rst_n                                                                                                              |                3 |              8 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/rec_data[7]                                                                              | u_udp/u_udp_rx/sys_rst_n_1                                                                                                            |                3 |              8 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/gmii_tx_en_i_1_n_0                                                                       | u_udp/u_udp_tx/sys_rst_n                                                                                                              |                3 |              8 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                         | u_arp/u_arp_tx/sys_rst_n                                                                                                              |                5 |              9 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                         | u_udp/u_udp_rx/sys_rst_n                                                                                                              |                7 |              9 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/tx_data_num0                                                                             | u_udp/u_udp_rx/sys_rst_n                                                                                                              |                3 |             11 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/data_cnt                                                                                 | u_arp/u_arp_rx/sys_rst_n                                                                                                              |                3 |             12 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/tx_done_reg_0[0]                                                                         | u_arp/u_arp_tx/sys_rst_n                                                                                                              |                6 |             12 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/des_ip                                                                                   | u_udp/u_udp_rx/sys_rst_n                                                                                                              |                5 |             14 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/E[0]                                                                                     | u_arp/u_arp_tx/sys_rst_n                                                                                                              |                5 |             15 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/data_cnt                                                                                 | u_udp/u_udp_rx/sys_rst_n                                                                                                              |                4 |             16 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/data_byte_num                                                                            | u_udp/u_udp_rx/sys_rst_n                                                                                                              |                4 |             16 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/rec_pkt_done_i_1_n_0                                                                     | u_udp/u_udp_rx/sys_rst_n                                                                                                              |                5 |             16 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/check_buffer                                                                             | u_udp/u_udp_tx/sys_rst_n                                                                                                              |                2 |             16 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/ip_head[2][15]_i_1_n_0                                                                   |                                                                                                                                       |                6 |             16 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/E[0]                                                                                     | u_arp/u_arp_tx/sys_rst_n                                                                                                              |                5 |             16 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc |                                                                                                         | u_udp/u_udp_tx/sys_rst_n                                                                                                              |                9 |             17 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/tx_done_reg_0[0]                                                                         | u_udp/u_udp_tx/sys_rst_n                                                                                                              |                8 |             20 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/arp_rx_done_i_1_n_0                                                                      | u_arp/u_arp_rx/cnt[4]_i_3_n_0                                                                                                         |                7 |             22 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_sync_fifo_2048x32b/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/wr_en_0[0] | u_sync_fifo_2048x32b/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/AR[0]                                                                |                6 |             22 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_sync_fifo_2048x32b/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0]       | u_sync_fifo_2048x32b/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/AR[0]                                                                |                5 |             22 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/tx_en_d1_reg[0]                                                                          | u_arp/u_arp_tx/sys_rst_n                                                                                                              |                8 |             24 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/src_ip_t[31]_i_1_n_0                                                                     | u_udp/u_udp_rx/sys_rst_n_0                                                                                                            |                9 |             26 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/tx_data_num0                                                                             | u_udp/u_udp_rx/sys_rst_n_0                                                                                                            |                8 |             29 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/ip_head[6][31]_i_1_n_0                                                                   |                                                                                                                                       |               16 |             31 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_tx/E[0]                                                                                     | u_arp/u_arp_tx/sys_rst_n                                                                                                              |               15 |             32 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_tx/ip_head[6][31]_i_1_n_0                                                                   | u_arp/u_arp_rx/trig_tx_en_reg                                                                                                         |                7 |             32 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/des_ip_t[31]_i_1_n_0                                                                     | u_arp/u_arp_rx/cnt[4]_i_3_n_0                                                                                                         |                7 |             32 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/E[0]                                                                                     | u_udp/u_udp_tx/sys_rst_n                                                                                                              |                7 |             33 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_udp/u_udp_rx/des_mac                                                                                  | u_udp/u_udp_rx/sys_rst_n_0                                                                                                            |                9 |             40 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/src_mac_t[47]_i_1_n_0                                                                    | u_arp/u_arp_rx/cnt[4]_i_3_n_0                                                                                                         |               13 |             48 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/des_mac_t[47]_i_1_n_0                                                                    | u_arp/u_arp_rx/sys_rst_n                                                                                                              |               19 |             48 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/tx_en_d1_reg[0]                                                                          | u_arp/u_arp_rx/sys_rst_n_0                                                                                                            |               11 |             49 |
+|  u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc | u_arp/u_arp_rx/arp_rx_done_i_1_n_0                                                                      | u_arp/u_arp_rx/sys_rst_n_0                                                                                                            |               11 |             58 |
++---------------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

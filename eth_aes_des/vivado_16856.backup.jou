@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov  8 21:49:01 2022
+# Process ID: 16856
+# Current directory: C:/Users/001/Desktop/40_eth_udp_loop
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14548 C:\Users\001\Desktop\40_eth_udp_loop\eth_udp_loop.xpr
+# Log file: C:/Users/001/Desktop/40_eth_udp_loop/vivado.log
+# Journal file: C:/Users/001/Desktop/40_eth_udp_loop\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/impl_2/eth_udp_loop.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/impl_2/eth_udp_loop.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/impl_2/eth_udp_loop.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/impl_2/eth_udp_loop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/impl_2/eth_udp_loop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 16
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 16
+wait_on_run impl_2
+set_property PROBES.FILE {C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/impl_2/eth_udp_loop.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/impl_2/eth_udp_loop.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/impl_2/eth_udp_loop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"adasda"}]]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/impl_2/eth_udp_loop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/001/Desktop/40_eth_udp_loop/eth_udp_loop.runs/impl_2/eth_udp_loop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

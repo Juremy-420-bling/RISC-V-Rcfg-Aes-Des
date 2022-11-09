@@ -1,0 +1,117 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Nov  7 12:30:37 2022
+# Process ID: 4340
+# Current directory: E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13916 E:\BaiduNetdiskDownload\E203_P3\E203_Zynq_7010\E203_Zynq_7010.xpr
+# Log file: E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/vivado.log
+# Journal file: E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v
+import_files -norecurse E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_udp_loop.v
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/crc32_d8.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/gmii_to_rgmii.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_rx.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_ctrl.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_tx.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_rx.v}
+import_files -norecurse {E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/crc32_d8.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/gmii_to_rgmii.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_rx.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_rx.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/udp/udp_tx.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/eth_ctrl.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/gmii_to_rgmii/rgmii_tx.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_tx.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/new/arp/arp_rx.v}
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/P.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/aesinitkeyprocess.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/top.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/SubBytes.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/AESkeyprocess.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/left_shiftera.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/DESkey.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/left_shifterb.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/InvSubBytes.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/desdekey.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/aesden.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/DESkeys.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/MixColumns.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/InvMixColumns.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S_box.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/init_process.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/ENCNEW.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S8.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/process.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/new/read_and_out.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S4.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S5.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S6.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/desL.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S7.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S1.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S2.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S3.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/E_box.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/desf.v}
+import_files -norecurse {E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/P.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/aesinitkeyprocess.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/top.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/SubBytes.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/AESkeyprocess.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/left_shiftera.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/DESkey.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/left_shifterb.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/InvSubBytes.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/desdekey.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/aesden.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/DESkeys.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/MixColumns.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/InvMixColumns.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S_box.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/init_process.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/ENCNEW.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S8.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/process.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/new/read_and_out.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S4.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S5.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S6.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/desL.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S7.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S1.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S2.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/S3.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/E_box.v E:/Data/qq_Data/1160526907/FileRecv/40_eth_udp_loop/eth_udp_loop.srcs/sources_1/imports/des_aes/desf.v}
+update_compile_order -fileset sources_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz -dir e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {clk_wiz} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {200.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.CLKOUT1_JITTER {114.829}] [get_ips clk_wiz]
+generate_target {instantiation_template} [get_files e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/clk_wiz/clk_wiz.xci]
+generate_target all [get_files  e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/clk_wiz/clk_wiz.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz] }
+export_ip_user_files -of_objects [get_files e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/clk_wiz/clk_wiz.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/clk_wiz/clk_wiz.xci]
+launch_runs -jobs 16 clk_wiz_synth_1
+export_simulation -of_objects [get_files e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/clk_wiz/clk_wiz.xci] -directory E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.ip_user_files/sim_scripts -ip_user_files_dir E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.ip_user_files -ipstatic_source_dir E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.cache/compile_simlib/modelsim} {questa=E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.cache/compile_simlib/questa} {riviera=E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.cache/compile_simlib/riviera} {activehdl=E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name fifo_generator_0 -dir e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip
+set_property -dict [list CONFIG.Input_Data_Width {32} CONFIG.Input_Depth {2048} CONFIG.Output_Data_Width {128} CONFIG.Output_Depth {512} CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {1} CONFIG.Use_Extra_Logic {true} CONFIG.Data_Count_Width {11} CONFIG.Write_Data_Count_Width {12} CONFIG.Read_Data_Count_Width {10} CONFIG.Full_Threshold_Assert_Value {2045} CONFIG.Full_Threshold_Negate_Value {2044} CONFIG.Enable_Safety_Circuit {false}] [get_ips fifo_generator_0]
+generate_target {instantiation_template} [get_files e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+generate_target all [get_files  e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+catch { config_ip_cache -export [get_ips -all fifo_generator_0] }
+export_ip_user_files -of_objects [get_files e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+launch_runs -jobs 16 fifo_generator_0_synth_1
+export_simulation -of_objects [get_files e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci] -directory E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.ip_user_files/sim_scripts -ip_user_files_dir E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.ip_user_files -ipstatic_source_dir E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.cache/compile_simlib/modelsim} {questa=E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.cache/compile_simlib/questa} {riviera=E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.cache/compile_simlib/riviera} {activehdl=E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name sync_fifo_2048x32b -dir e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {sync_fifo_2048x32b} CONFIG.Input_Data_Width {128} CONFIG.Input_Depth {2048} CONFIG.Output_Data_Width {32} CONFIG.Output_Depth {8192} CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {1} CONFIG.Use_Extra_Logic {true} CONFIG.Data_Count_Width {11} CONFIG.Write_Data_Count_Width {12} CONFIG.Read_Data_Count_Width {14} CONFIG.Full_Threshold_Assert_Value {2045} CONFIG.Full_Threshold_Negate_Value {2044} CONFIG.Enable_Safety_Circuit {true}] [get_ips sync_fifo_2048x32b]
+generate_target {instantiation_template} [get_files e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci]
+generate_target all [get_files  e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci]
+catch { config_ip_cache -export [get_ips -all sync_fifo_2048x32b] }
+export_ip_user_files -of_objects [get_files e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci]
+launch_runs -jobs 16 sync_fifo_2048x32b_synth_1
+export_simulation -of_objects [get_files e:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci] -directory E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.ip_user_files/sim_scripts -ip_user_files_dir E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.ip_user_files -ipstatic_source_dir E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.cache/compile_simlib/modelsim} {questa=E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.cache/compile_simlib/questa} {riviera=E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.cache/compile_simlib/riviera} {activehdl=E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run PLL_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+close_design
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+report_utilization -name utilization_2
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+current_design synth_1
+report_utilization -name utilization_3
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+current_design impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.runs/impl_1/aic_rv32.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+write_cfgmem  -format mcs -size 128 -interface SPIx4 -loadbit {up 0x00000000 "E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.runs/impl_1/aic_rv32.bit" } -checksum -force -disablebitswap -file "E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.runs/impl_1/aic_rv32"
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.runs/impl_1/aic_rv32.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetdiskDownload/E203_P3/E203_Zynq_7010/E203_Zynq_7010.runs/impl_1/aic_rv32.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

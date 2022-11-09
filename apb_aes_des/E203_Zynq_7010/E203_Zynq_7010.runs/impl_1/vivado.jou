@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Oct 22 22:59:50 2022
+# Process ID: 19788
+# Current directory: E:/BaiduNetdiskDownload/E203_P2/E203_Zynq_7010/E203_Zynq_7010.runs/impl_1
+# Command line: vivado.exe -log aic_rv32.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source aic_rv32.tcl -notrace
+# Log file: E:/BaiduNetdiskDownload/E203_P2/E203_Zynq_7010/E203_Zynq_7010.runs/impl_1/aic_rv32.vdi
+# Journal file: E:/BaiduNetdiskDownload/E203_P2/E203_Zynq_7010/E203_Zynq_7010.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source aic_rv32.tcl -notrace
